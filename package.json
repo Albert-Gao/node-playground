@@ -1,0 +1,28 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
