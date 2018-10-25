@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./src/index.js",
-    "test": "jest"
+    "test": "npm run lint && jest",
+    "lint": "eslint ./src"
   },
   "author": "",
   "license": "ISC",
@@ -16,13 +17,18 @@
     "jest": "^23.6.0"
   },
   "eslintConfig": {
-    "extends": "airbnb-base"
+    "extends": "airbnb-base",
+    "env": {
+      "node": true,
+      "jest": true
+    }
   },
   "jest": {
     "verbose": true,
     "testEnvironment": "node"
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }
